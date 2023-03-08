@@ -70,5 +70,5 @@ button.copy:hover.copied::before {
   color: var(--copy-active-text);
   background-color: var(--copy-hover-bg);
   white-space: nowrap;
-  content: "复制成功";
+  content: "Copied successful";
 }
