@@ -31,7 +31,7 @@ export default function Setting(props: {
             }}
           />
         </SettingItem>
-        <SettingItem icon="i-carbon:user-online" label="系统角色指令">
+        <SettingItem icon="i-carbon:user-online" label="System Role Instructions">
           <input
             type="text"
             value={props.setting().systemRule}
@@ -44,7 +44,7 @@ export default function Setting(props: {
             }}
           />
         </SettingItem>
-        <SettingItem icon="i-carbon:data-enrichment" label="思维发散程度">
+        <SettingItem icon="i-carbon:data-enrichment" label="Temperture">
           <input
             type="range"
             min={0}
@@ -63,7 +63,7 @@ export default function Setting(props: {
         </SettingItem>
         <SettingItem
           icon="i-carbon:save-image"
-          label="记录对话内容，刷新不会消失"
+          label="Record the conversation content, refreshing will not make it disappear"
         >
           <label class="relative inline-flex items-center cursor-pointer ml-1">
             <input
@@ -82,7 +82,7 @@ export default function Setting(props: {
         </SettingItem>
         <SettingItem
           icon="i-carbon:3d-curve-auto-colon"
-          label="开启连续对话，将加倍消耗 Token"
+          label="Enabling continuous conversation will double the token consumption."
         >
           <label class="relative inline-flex items-center cursor-pointer ml-1">
             <input
@@ -109,7 +109,7 @@ export default function Setting(props: {
           }}
         >
           <button class="i-carbon:settings" />
-          <span ml-1>设置</span>
+          <span ml-1>Settings</span>
         </div>
         <div class="flex">
           <div
@@ -117,14 +117,14 @@ export default function Setting(props: {
             onClick={props.reAnswer}
           >
             <button class="i-carbon:reset" />
-            <span ml-1>重新回答</span>
+            <span ml-1>Answer Again</span>
           </div>
           <div
             class="flex items-center cursor-pointer ml-3 hover:text-slate-3 "
             onClick={props.clear}
           >
             <button class="i-carbon:trash-can" />
-            <span ml-1>清空对话</span>
+            <span ml-1>Clear the conversation</span>
           </div>
         </div>
       </div>
