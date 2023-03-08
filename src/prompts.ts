@@ -314,7 +314,6 @@ desc: "Psychologist",
 prompt:
 "I want you to play the role of a psychologist. I will tell you my thoughts, and I want you to give me scientific advice to help me feel better. My first thought is,"
 },
-Translation:
 
 {
 desc: "Intelligent Domain Name Generator",
