@@ -24,10 +24,10 @@ export const post: APIRoute = async context => {
 
   if (!key.startsWith("sk-")) key = apiKey
   if (!key) {
-    return new Response("没有填写 OpenAI API key")
+    return new Response("OpenAI API key was not entered.")
   }
   if (!messages) {
-    return new Response("没有输入任何文字")
+    return new Response("No text was entered.")
   }
 
   const completion = await fetch("https://api.openai.com/v1/chat/completions", {
